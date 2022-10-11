@@ -3,13 +3,19 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.market { 
+  position: relative;
+  display: flex; 
+  align-items: center 
 }
 
 .footer {
@@ -42,7 +48,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -51,7 +57,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -83,6 +89,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  position: relative;
 }
 
 .card:hover,
@@ -104,8 +111,9 @@
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  /* height: 1em; */
+  margin-left: 0.3rem;
+  /* margin-right: 0.1rem; */
 }
 
 @media (max-width: 600px) {
