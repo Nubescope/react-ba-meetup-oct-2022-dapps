@@ -1,40 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Intro al desarrollo frontend para DApps en React 
+**Underscope @ React Buenos Aires | Octubre 2022**
 
-## Getting Started
+Proyecto usado en la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser.
 
-First, run the development server:
+## Iniciando el servidor
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pre-requisitos
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Instalar metamask en el browser ([link](https://metamask.io/))
+- Obtener GoerliEth de faucet ([link](https://goerlifaucet.com/))
+- Convertir un poco de GoerliEth a DAI en [Uniswap](https://app.uniswap.org/) (usar dirección de DAI para Goerli especificada más abajo)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Pasos
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Demo 0](./src/pages/demo-0.tsx) - componentes mockeados
+- [Demo 1](./src/pages/demo-1.tsx) - leer contratos
+- [Demo 2](./src/pages/demo-2.tsx) - verificar si se otorgó acceso a los fondos
+- [Demo 3](./src/pages/demo-3.tsx) - conectar billetera
+- [Demo 4](./src/pages/demo-4.tsx) - autorizar a compound a acceder a los fondos
+- [Demo 5](./src/pages/demo-5.tsx) - obtener info de la TX
+- [Demo 6](./src/pages/demo-6.tsx) - mintear CDAI
 
-## Learn More
+## Direcciones de Contratos (Goerli)
 
-To learn more about Next.js, take a look at the following resources:
+- DAI: `0x2899a03ffDab5C90BADc5920b4f53B0884EB13cC`
+- CDAI: `0x0545a8eaF7ff6bB6F708CbB544EA55DBc2ad7b2a`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Steps
-
-```
-yarn add ethers wagmi
-```
+- [Goerli Faucet](https://goerlifaucet.com/) (para obtener Eth de prueba)
+- [Block Explorer](https://goerli.etherscan.io/) (para ver info de txs)
+- [Docs de Compound](https://docs.compound.finance/#networks) (acá podemos verificar los contratos que usa para cada network)
