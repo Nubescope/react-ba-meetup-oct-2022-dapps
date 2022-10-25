@@ -1,7 +1,7 @@
 # Intro al desarrollo frontend para DApps en React 
 **Underscope @ React Buenos Aires | Octubre 2022**
 
-Proyecto usado durante la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser usando React.
+Sitio web hecho en [NextJS](https://nextjs.org/) usado durante la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser usando React.
 
 La demo se puede ver online ingresando a este <a href="https://react-ba-meetup-oct-2022-dapps-g2z2.vercel.app/" target="_blank">link</a>.
 
@@ -41,3 +41,4 @@ yarn dev
 - [Goerli Faucet](https://goerlifaucet.com/) (para obtener Eth de prueba)
 - [Block Explorer](https://goerli.etherscan.io/) (para ver info de txs)
 - [Docs de Compound](https://docs.compound.finance/#networks) (para verificar los contratos que debemos usar para cada network)
+
