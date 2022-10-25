@@ -25,7 +25,7 @@ const Footer: FC = () => {
           flexGrow: 1,
         }}
       >
-        Made by{' '}
+        Made with 🔥 by{' '}
         <Text ml="0.3rem" mr="0.3">
           <Image src="/underscope.png" alt="Underscope Logo" height={22} width={22} />
         </Text>
