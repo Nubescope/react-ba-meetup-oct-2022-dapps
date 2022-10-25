@@ -40,5 +40,5 @@ yarn dev
 - [Wagmi](https://wagmi.sh/) (hooks de react para interactuar con ethereum)
 - [Goerli Faucet](https://goerlifaucet.com/) (para obtener Eth de prueba)
 - [Block Explorer](https://goerli.etherscan.io/) (para ver info de txs)
-- [Docs de Compound](https://docs.compound.finance/#networks) (para verificar los contratos que debemos usar para cada network)
+- [Docs de Compound](https://docs.compound.finance/#networks) (sección para verificar los contratos que debemos usar para cada network)
 
