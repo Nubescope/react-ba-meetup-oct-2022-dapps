@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>React Compound Demo</title>
+        <title>Compound Finance Demo</title>
         <link rel="icon" href="/underscope.png" />
       </Head>
 

@@ -13,7 +13,7 @@ const Nav: React.FC<Props> = ({ address, onConnectPress, onDisconnectPress }) =>
       <Flex align="center" justify="space-between" h={16}>
         <Box fontSize={['sm', 'md', '2xl']}>
           <Text as="span" fontWeight="bold">
-            React Compound Demo
+            Compound Finance Demo
           </Text>
         </Box>
 
