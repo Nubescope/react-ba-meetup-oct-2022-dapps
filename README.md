@@ -3,6 +3,8 @@
 
 Proyecto usado en la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser.
 
+Este sitio se puede visualizar [acá](https://react-ba-meetup-oct-2022-dapps-g2z2.vercel.app/).
+
 ## Iniciando el servidor
 
 ```bash
