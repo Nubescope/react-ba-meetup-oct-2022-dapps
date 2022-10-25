@@ -6,7 +6,7 @@ import { CDAI } from '../constants'
 import { formatBigNumber } from '../helpers'
 
 const useCdaiUnderlyingBalance = (address?: string) => {
-  const [result, setResult] = useState('')
+  const [result, setResult] = useState<BigNumber>()
   const [isLoading, setIsLoading] = useState(false)
   const provider = useProvider()
 
@@ -22,9 +22,8 @@ const useCdaiUnderlyingBalance = (address?: string) => {
       const res = await contract.callStatic.balanceOfUnderlying(address)
       setIsLoading(false)
 
-      const balance = formatBigNumber(BigNumber.from(res), 3) || '0.00'
-
-      if (balance) {
+      if (res) {
+        const balance = BigNumber.from(res)
         setResult(balance)
       }
     }
@@ -34,11 +33,13 @@ const useCdaiUnderlyingBalance = (address?: string) => {
     }
   }, [contract, address])
 
-  useEffect(() => {
-    refetch()
-  }, [refetch])
+  useEffect(refetch, [refetch])
 
-  return { isLoading, refetch, formatted: result }
+  return { 
+    refetch, 
+    isLoading, 
+    formatted: formatBigNumber(result, 3) || '0.000'
+  }
 }
 
 export default useCdaiUnderlyingBalance

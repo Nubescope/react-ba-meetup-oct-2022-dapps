@@ -1,7 +1,5 @@
 import { FC } from 'react'
-import { Box, Button } from '@chakra-ui/react'
-
-import styles from '../styles/Home.module.css'
+import { Box, Button, Text } from '@chakra-ui/react'
 
 const ConnectOverlay: FC<{ onConnectPress?: () => void }> = ({ onConnectPress }) => {
   return (
@@ -21,9 +19,11 @@ const ConnectOverlay: FC<{ onConnectPress?: () => void }> = ({ onConnectPress })
         padding: '20px',
       }}
     >
-      <p className={styles.description}>Please, connect your wallet to start investing</p>
+      <Text fontSize="2xl" align="center" mb="6" lineHeight={1.5}>
+        Por favor, conectá your wallet para empezar a invertir
+      </Text>
       <Button colorScheme="blue" onClick={onConnectPress}>
-        Connect
+        Conectar
       </Button>
     </Box>
   )

@@ -3,7 +3,7 @@ import { useContractRead } from 'wagmi'
 
 import { CDAI, DAI } from '../constants'
 
-const useIsCdaiAllowance = (address?: string) => {
+const useCdaiAllowance = (address?: string) => {
   const res = useContractRead({
     addressOrName: DAI.address,
     contractInterface: DAI.abi,
@@ -21,4 +21,4 @@ const useIsCdaiAllowance = (address?: string) => {
  * Exports
  */
 
-export default useIsCdaiAllowance
+export default useCdaiAllowance

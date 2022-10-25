@@ -13,7 +13,7 @@ const useDaiBalance = (address?: string) => {
 
   return {
     ...res,
-    formatted: formatBigNumber(BigNumber.from(res.data || 0), 2),
+    formatted: formatBigNumber(BigNumber.from(res.data || 0), 2) || '0.00',
   }
 }
 

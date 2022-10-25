@@ -1,7 +1,6 @@
 import { FC } from 'react'
-import { Box, Button } from '@chakra-ui/react'
+import { Box, Button, Text } from '@chakra-ui/react'
 
-import styles from '../styles/Home.module.css'
 import LoadingOverlay from './LoadingOverlay'
 
 const AuthorizeCompoundOverlay: FC<{ isLoading: boolean, onAuthorizePress?: () => void }> = ({
@@ -29,11 +28,11 @@ const AuthorizeCompoundOverlay: FC<{ isLoading: boolean, onAuthorizePress?: () =
         padding: '20px',
       }}
     >
-      <p className={styles.description}>
-        In order to start investing you need to authorize Compound to access your DAI
-      </p>
+      <Text fontSize="2xl" align="center" mb="6" lineHeight={1.5}>
+        Para empezar a invertir necesitás autorizar a que Compound acceda a tus DAI
+      </Text>
       <Button colorScheme="red" onClick={onAuthorizePress}>
-        Authorize Compound
+        Autorizar a Compound
       </Button>
     </Box>
   )

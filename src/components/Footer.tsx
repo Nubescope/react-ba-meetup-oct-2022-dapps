@@ -1,19 +1,34 @@
 import { FC } from 'react'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Text } from '@chakra-ui/react'
 
 const Footer: FC = () => {
   return (
-    <footer className={styles.footer}>
+    <footer
+      style={{
+        display: 'flex',
+        flex: 1,
+        padding: '2rem 0',
+        borderTop: '1px solid #eaeaea',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        href="https://underscope.io"
         target="_blank"
         rel="noopener noreferrer"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexGrow: 1,
+        }}
       >
         Made by{' '}
-        <span className={styles.logo}>
+        <Text ml="0.3rem" mr="0.3">
           <Image src="/underscope.png" alt="Underscope Logo" height={22} width={22} />
-        </span>
+        </Text>
         Underscope
       </a>
     </footer>
