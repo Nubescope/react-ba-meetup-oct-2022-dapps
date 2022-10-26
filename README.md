@@ -3,7 +3,9 @@
 
 Sitio web hecho en [NextJS](https://nextjs.org/) usado durante la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser usando React.
 
-La demo se puede ver online ingresando a este <a href="https://react-ba-meetup-oct-2022-dapps-g2z2.vercel.app/" target="_blank">link</a>.
+La demo se puede ver online ingresando a este [link](https://react-ba-meetup-oct-2022-dapps-g2z2.vercel.app)
+
+La presentación se puede ver online ingresando a este [link](./presentation.pdf).
 
 ## Iniciando el servidor
 
@@ -29,7 +31,7 @@ yarn dev
 - [Paso 5](./src/pages/demo-5.tsx) - obtener info de la TX
 - [Paso 6](./src/pages/demo-6.tsx) - mintear CDAI
 
-## Direcciones de Contratos (Goerli)
+## Direcciones de contratos (Goerli)
 
 - DAI: `0x2899a03ffDab5C90BADc5920b4f53B0884EB13cC`
 - CDAI: `0x0545a8eaF7ff6bB6F708CbB544EA55DBc2ad7b2a`
