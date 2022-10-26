@@ -3,9 +3,7 @@
 
 Sitio web hecho en [NextJS](https://nextjs.org/) usado durante la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser usando React.
 
-La demo se puede ver online ingresando a este [link](https://react-ba-meetup-oct-2022-dapps-g2z2.vercel.app)
-
-La presentación se puede ver online ingresando a este [link](./presentation.pdf).
+Acá dejamos los links a la [demo online](https://react-ba-meetup-oct-2022-dapps-g2z2.vercel.app) y a la [presentación](https://github.com/underscopeio/react-ba-meetup-oct-2022-dapps/blob/main/presentation.pdf).
 
 ## Iniciando el servidor
 
