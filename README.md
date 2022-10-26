@@ -1,5 +1,5 @@
 # Intro al desarrollo frontend para DApps en React 
-**Underscope @ React Buenos Aires | Octubre 2022**
+**React Buenos Aires | Octubre 2022**
 
 Sitio web hecho en [NextJS](https://nextjs.org/) usado durante la charla para demostrar como interactuar con DAI y CompoundJS desde nuestro browser usando React.
 
