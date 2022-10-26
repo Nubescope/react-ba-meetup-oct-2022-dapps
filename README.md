@@ -21,13 +21,13 @@ yarn dev
 
 ## Pasos
 
-- [Demo 0](./src/pages/demo-0.tsx) - componentes mockeados
-- [Demo 1](./src/pages/demo-1.tsx) - leer contratos
-- [Demo 2](./src/pages/demo-2.tsx) - verificar si se otorgó acceso a los fondos
-- [Demo 3](./src/pages/demo-3.tsx) - conectar billetera
-- [Demo 4](./src/pages/demo-4.tsx) - autorizar a compound a acceder a los fondos
-- [Demo 5](./src/pages/demo-5.tsx) - obtener info de la TX
-- [Demo 6](./src/pages/demo-6.tsx) - mintear CDAI
+- [Paso 0](./src/pages/demo-0.tsx) - componentes mockeados
+- [Paso 1](./src/pages/demo-1.tsx) - leer contratos
+- [Paso 2](./src/pages/demo-2.tsx) - verificar si se otorgó acceso a los fondos
+- [Paso 3](./src/pages/demo-3.tsx) - conectar billetera
+- [Paso 4](./src/pages/demo-4.tsx) - autorizar a compound a acceder a los fondos
+- [Paso 5](./src/pages/demo-5.tsx) - obtener info de la TX
+- [Paso 6](./src/pages/demo-6.tsx) - mintear CDAI
 
 ## Direcciones de Contratos (Goerli)
 
