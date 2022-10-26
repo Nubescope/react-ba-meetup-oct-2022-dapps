@@ -85,9 +85,7 @@ const Home: NextPage = () => {
       </main>
 
       {/* Temporary button for debug purposes */}
-      <Button visibility="hidden" onClick={() => unauthorize.write?.()}>
-        Disable Market
-      </Button>
+      <Button onClick={() => unauthorize.write?.()}>Disable Market</Button>
 
       <Footer />
     </div>

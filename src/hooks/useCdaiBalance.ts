@@ -15,7 +15,7 @@ const useCdaiBalance = (address?: string) => {
 
   return {
     ...res,
-    formatted: formatBigNumber(BigNumber.from(res.data || 0), 2) || '0.00',
+    formatted: formatBigNumber(res.data, 2),
   }
 }
 

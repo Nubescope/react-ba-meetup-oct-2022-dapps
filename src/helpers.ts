@@ -1,13 +1,12 @@
 import { BigNumber } from 'ethers'
-import { formatUnits } from 'ethers/lib/utils'
+import { formatUnits, Result } from 'ethers/lib/utils'
 
-export const formatBigNumber = (number?: BigNumber, displayDecimals = 18, decimals = 18) => {
-  if (!number) {
-    return
+export const formatBigNumber = (value?: Result, displayDecimals = 18, decimals = 18) => {
+  if (!value) {
+    return (0).toFixed(displayDecimals)
   }
 
-  const remainder = number.mod(BigNumber.from(10).pow(decimals - displayDecimals))
-  return formatUnits(number.sub(remainder), decimals)
+  return (+formatUnits(value, decimals)).toFixed(displayDecimals)
 }
 
 export const foramtAddress = (address?: string) => {

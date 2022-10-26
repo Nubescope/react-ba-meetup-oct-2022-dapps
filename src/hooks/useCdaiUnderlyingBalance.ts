@@ -1,4 +1,5 @@
 import { BigNumber } from 'ethers'
+import { Result } from 'ethers/lib/utils'
 import { useCallback, useEffect, useState } from 'react'
 import { useContract, useProvider } from 'wagmi'
 
@@ -6,7 +7,7 @@ import { CDAI } from '../constants'
 import { formatBigNumber } from '../helpers'
 
 const useCdaiUnderlyingBalance = (address?: string) => {
-  const [result, setResult] = useState<BigNumber>()
+  const [result, setResult] = useState<Result>()
   const [isLoading, setIsLoading] = useState(false)
   const provider = useProvider()
 
@@ -23,8 +24,7 @@ const useCdaiUnderlyingBalance = (address?: string) => {
       setIsLoading(false)
 
       if (res) {
-        const balance = BigNumber.from(res)
-        setResult(balance)
+        setResult(res)
       }
     }
 
@@ -38,7 +38,7 @@ const useCdaiUnderlyingBalance = (address?: string) => {
   return { 
     refetch, 
     isLoading, 
-    formatted: formatBigNumber(result, 3) || '0.000'
+    formatted: formatBigNumber(result, 2)
   }
 }
 
