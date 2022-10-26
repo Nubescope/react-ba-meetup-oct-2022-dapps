@@ -20,7 +20,7 @@ const ConnectOverlay: FC<{ onConnectPress?: () => void }> = ({ onConnectPress })
       }}
     >
       <Text fontSize="2xl" align="center" mb="6" lineHeight={1.5}>
-        Por favor, conectá your wallet para empezar a invertir
+        Por favor, conectá tu wallet para empezar a invertir
       </Text>
       <Button colorScheme="blue" onClick={onConnectPress}>
         Conectar

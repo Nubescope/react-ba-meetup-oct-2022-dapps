@@ -8,6 +8,7 @@ import { useIsMounted } from '../hooks/useIsMounted'
 import Head from 'next/head'
 
 const wagmiClient = createClient({
+  autoConnect: true,
   provider: getDefaultProvider(NETWORK_ID),
 })
 
