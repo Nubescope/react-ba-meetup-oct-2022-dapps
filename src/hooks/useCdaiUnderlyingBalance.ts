@@ -1,4 +1,3 @@
-import { BigNumber } from 'ethers'
 import { Result } from 'ethers/lib/utils'
 import { useCallback, useEffect, useState } from 'react'
 import { useContract, useProvider } from 'wagmi'

@@ -1,4 +1,3 @@
-import { BigNumber } from 'ethers'
 import { formatUnits, Result } from 'ethers/lib/utils'
 
 export const formatBigNumber = (value?: Result, displayDecimals = 18, decimals = 18) => {

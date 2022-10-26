@@ -1,4 +1,3 @@
-import { BigNumber } from 'ethers'
 import { useContractRead } from 'wagmi'
 import { DAI } from '../constants'
 import { formatBigNumber } from '../helpers'
