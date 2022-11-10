@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { getDefaultProvider } from 'ethers'
 import { WagmiConfig, createClient } from 'wagmi'
@@ -7,9 +6,13 @@ import { NETWORK_ID } from '../constants'
 import { useIsMounted } from '../hooks/useIsMounted'
 import Head from 'next/head'
 
+import '../styles/globals.css'
+
 const wagmiClient = createClient({
   autoConnect: true,
-  provider: getDefaultProvider(NETWORK_ID),
+  provider: getDefaultProvider(NETWORK_ID, {
+    alchemy: 'zlHUoiA_uivznidrEZh1qOl1JRPCV67H',
+  }),
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
